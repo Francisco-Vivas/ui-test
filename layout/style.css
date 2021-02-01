@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+html,
+body {
+  font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+.navbar-top {
+  color: #ffffff;
+  padding: 2.5em 2em 3em;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(73, 73, 73, 0.852) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(73, 73, 73, 0.852) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(73, 73, 73, 0.852) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#5e5e5e",GradientType=1);
+}
+
+.icon__search {
+  width: 1.5rem;
+}
+
+.icon__wiki {
+  width: 1rem;
+}
+
+.icon__like-pope {
+  width: 2.5em;
+}
+
+.icon__notlike {
+  -webkit-transform: scaleY(-1) scaleX(-1);
+  transform: scaleY(-1) scaleX(-1);
+}
+
+header {
+  background: url("/public/assets/images/pope_francis.jpg");
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.container__pope {
+  height: 40em;
+  position: relative;
+  padding: 0;
+}
+
+.container__pope-position {
+  position: absolute;
+  bottom: 6em;
+}
+
+.card__pope {
+  position: relative;
+}
+
+.card__pope-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4b4b4b98;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+}
+
+.card__pope-text {
+  padding: 1em 4em 1em 1.4em;
+  font-weight: 300;
+  height: 100%;
+  color: #ffffff !important;
+  z-index: 1;
+  -webkit-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.card__pope-votes {
+  height: 100%;
+  color: #ffffff !important;
+  z-index: 1;
+  -webkit-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.collapse {
+  font-size: 1em;
+}
+
+header a {
+  color: #ffffff !important;
+  font-weight: 300;
+}
+header a:hover {
+  color: #ffffffd2 !important;
+}
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+h3 + p {
+  font-size: 1.15em;
+  line-height: 1.2em;
+}
+
+img[class="icon__wiki"] + a {
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+.vote-positive {
+  background-color: #1cbbb4;
+}
+
+.vote-negative {
+  background-color: #ffad1d;
+}
+
+.vote-positive-alpha {
+  background-color: #1cbbb49a;
+}
+
+.vote-negative-alpha {
+  background-color: #ffac1d9a;
+}
+
+.div__pope-bottom {
+  height: 3em;
+}
+
+.div__pope-bottom p {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.div__pope-closing {
+  position: absolute;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #5e5d5d60;
+}
+
+.div__pope-closing-text {
+  z-index: 1;
+  color: #ffffff;
+  font-size: 0.75em;
+  padding-right: 0.8em;
+  -webkit-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.div__pope-days {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: #ffffff7e;
+}
+
+.div__pope-days-text {
+  z-index: 1;
+  height: 100%;
+}
+.div__pope-days-text p {
+  height: 100%;
+  font-weight: 200;
+  font-size: 1.8em;
+}
+.icon__play {
+  width: 0.5em;
+  margin-left: -1px;
+  margin-top: -5px;
+  color: #5e5d5d60;
+}
+
+.section__beCounted {
+  background-color: #ebebeb;
+  font-weight: 300;
+}
+
+.section__beCounted b {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.icon__close {
+  width: 1.5rem;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.icon__like-cardsName {
+  width: 2em;
+  padding: 0.4em;
+}
+
+.icon__like-voting {
+  width: 1.7em;
+}
+
+.icon__like-selected {
+  border: 0.15em solid white;
+}
+.div__cards {
+  font-weight: 300;
+  margin: 0 -5em;
+}
+
+.div__card__content {
+  height: 38em;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5830707282913166) 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5830707282913166) 100%
+  ) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5830707282913166) 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+  color: white;
+}
+
+.div__card__content > div {
+  width: 100%;
+}
+
+.card__content-text {
+  display: inline-block;
+}
+.card__content-text h3 {
+  margin: 0;
+}
+
+.button__card {
+  background-color: #ffffff00;
+  border: 0.13em solid #fff;
+  color: rgb(255, 255, 255);
+  padding: 0.5em 1.2em;
+}
+
+.span__votingCards {
+  color: white;
+  height: 100%;
+  font-size: 2em;
+}
+
+.span__percentage {
+  font-size: 0.8em;
+}
+
+.p__vote-container {
+  height: 6.5em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.p__vote-container-cristina {
+  height: 13.7em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card__content-text-inner {
+  height: 6em;
+}
+
+.card__content-text-inner > span {
+  font-size: 0.8em;
+}
+
+.card__content-text-inner > p {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+.card__west {
+  background-image: url("/public/assets/images/kanye-west.jpeg");
+  background-position: -15em -6.5em;
+  background-size: 60em;
+  background-repeat: no-repeat;
+}
+
+.card__mark {
+  background-image: url("/public/assets/images/mark-zuckerberg.jpg");
+  background-position: -20em -0em;
+  background-size: 80em;
+  background-repeat: no-repeat;
+}
+
+.card__cristina {
+  background-image: url("/public/assets/images/cristina-kirchner.jpg");
+  background-position: -22em 0em;
+  background-size: 60em;
+  background-repeat: no-repeat;
+}
+
+.card__malala {
+  background-image: url("/public/assets/images/yousafzai-malala.jpg");
+  background-position: -36em -6em;
+  background-size: 68em;
+  background-repeat: no-repeat;
+}
+
+.section__addNew {
+  font-size: 1.1em;
+  font-weight: 300;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("/public/assets/images/crowd-add-new.jpg");
+  background-position: 40% 44%;
+}
+
+.section__addNew > a {
+  font-size: 0.6em;
+  background-color: #ffffff00;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  border: 0.2em solid #000;
+  padding: 1em;
+}
+
+footer {
+  font-weight: 300;
+  background-image: linear-gradient(
+    to right,
+    #000 5%,
+    rgba(255, 255, 255, 0) 10%
+  );
+  background-position: top;
+  background-size: 6px 2px;
+  background-repeat: repeat-x;
+}
+
+footer a {
+  color: black;
+}
+footer a:hover {
+  color: rgba(0, 0, 0, 0.548);
+}
+
+.icon__social {
+  width: 1.7em;
+}
+
+@media (min-width: 800px) {
+  .navbar-top {
+    padding: 2em 10em;
+  }
+  .search-icon {
+    font-size: 1.2em;
+  }
+
+  header {
+    background-position: relative;
+  }
+
+  .card__pope-text {
+    padding: 1em 10em 1em 1.4em;
+  }
+
+  .card__west {
+    background-position: -15em -6.5em;
+    background-size: 60em;
+  }
+  .card__mark {
+    background-position: -20em -0em;
+    background-size: 80em;
+  }
+  .card__cristina {
+    background-position: -22em 0em;
+    background-size: 60em;
+  }
+  .card__malala {
+    background-position: -37em -6em;
+    background-size: 68em;
+  }
+  .p__vote-container {
+    height: 3em;
+  }
+  .p__vote-container-cristina {
+    height: 6.5em;
+  }
+  .section__addNew {
+    font-size: 2.1em;
+    background-position: 0 44%;
+  }
+  .section__addNew > a {
+    padding: 0.5em 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .card__west {
+    background-position: -9.5em -6.5em;
+    background-size: 60em;
+  }
+  .card__mark {
+    background-position: -13em -0em;
+    background-size: 80em;
+  }
+  .card__cristina {
+    background-position: -15em 0em;
+    background-size: 60em;
+  }
+  .card__malala {
+    background-position: -30em -6em;
+    background-size: 68em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__west {
+    background-position: -5.5em -6.5em;
+    background-size: 60em;
+  }
+  .card__mark {
+    background-position: -7em -0em;
+    background-size: 80em;
+  }
+  .card__cristina {
+    background-position: -10em 0em;
+    background-size: 60em;
+  }
+  .card__malala {
+    background-position: -26em -6em;
+    background-size: 68em;
+  }
+}
