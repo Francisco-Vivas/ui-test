@@ -18,6 +18,7 @@ const Card = ({ data, voted = false }) => {
     localData[data.id].totalvotes = totalVotes;
     localStorage.setItem("jsonData", JSON.stringify(localData));
   };
+  const upvoteSize = Math.ceil((upvotes * 12) / totalVotes);
 
   return (
     <div className="col-12 col-md-6 p-3">
@@ -120,9 +121,7 @@ const Card = ({ data, voted = false }) => {
             </div>
             <div className="div__card__votes row m-0">
               <div
-                className={`vote-positive-alpha d-flex align-items-baseline col-${Math.ceil(
-                  (upvotes * 12) / totalVotes
-                )}`}
+                className={`vote-positive-alpha d-flex align-items-baseline col-${upvoteSize}`}
               >
                 <img
                   className="icon__like-voting mr-1"
@@ -134,7 +133,11 @@ const Card = ({ data, voted = false }) => {
                   <span className="span__percentage">%</span>
                 </span>
               </div>
-              <div className="col vote-negative-alpha d-flex justify-content-end align-items-baseline">
+              <div
+                className={`col-${
+                  12 - upvoteSize
+                } vote-negative-alpha d-flex justify-content-end align-items-baseline`}
+              >
                 <span className="span__votingCards">
                   {Math.ceil((downvotes / totalVotes) * 100)}
                   <span className="span__percentage">%</span>
